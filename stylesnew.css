@@ -1,0 +1,204 @@
+/* styles.css */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://img.freepik.com/premium-vector/closed-padlock-digital-background-cyber-security_42077-17393.jpg?semt=ais_hybrid'); /* Replace with your tech background image URL */
+    background-size: cover;  /* Cover the entire page */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed on scroll */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 500px;  /* Limit the container width for larger screens */
+}
+
+/* Header Style */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Password Input */
+input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="password"]:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+/* Strength Bar */
+#strength {
+    width: 80%;
+    height: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Feedback Text */
+#feedback {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Strength Bar Colors */
+.weak {
+    background-color: red;
+}
+
+.medium {
+    background-color: orange;
+}
+
+.strong {
+    background-color: green;
+}
+
+/* Suggestions Section */
+#suggestions {
+    margin-top: 30px;
+}
+
+#suggestions h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#suggestions-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+/* Breach Check Section */
+#breach {
+    margin-top: 30px;
+}
+
+#breach h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#breachStatus {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Button Styling */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="password"] {
+        width: 100%;
+    }
+
+    #strength {
+        width: 100%;
+    }
+
+    #suggestions-list li {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    #strength {
+        width: 100%;
+    }
+
+    #suggestions h3,
+    #breach h3 {
+        font-size: 16px;
+    }
+
+    #suggestions-list li {
+        font-size: 12px;
+    }
+}

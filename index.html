@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="stylesnew.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+
+        <!-- Password Input Field -->
+        <input type="password" id="password" placeholder="Enter your password" onkeyup="checkPasswordStrength()">
+
+        <!-- Strength Bar -->
+        <div id="strength"></div>
+
+        <!-- Feedback Message -->
+        <div id="feedback"></div>
+
+        
+        <div id="breach">
+           <h3>check whether the password is in data breach or not</h3>
+           <button onclick="breachstatusbtn()">check for the status</button>
+           <h4 id="breachStatus"></h4>
+        </div>
+        <!-- Suggested Strong Passwords -->
+        <div id="suggestions">
+            <h3>Suggested Strong Passwords:</h3>
+            <!-- You can use this button if you want manual suggestions -->
+            <button onclick="suggestPassword()">Generate Suggestions</button>
+            <ul id="suggestions-list">
+                <!-- Suggested passwords will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="scriptnew.js"></script>
+</body>
+</html>
